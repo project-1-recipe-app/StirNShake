@@ -10,3 +10,9 @@ img {
 	width: 200px;
 	height: auto;
 }
+
+h6 {
+	font-size: 20px;
+	text-align: left;
+	margin: none;
+}

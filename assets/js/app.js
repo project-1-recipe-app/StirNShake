@@ -13,21 +13,44 @@
 // Create a variable to reference the database
 var database = firebase.database();
 
-// Initial Values
-
 // At the initial load, get a snapshot of the current data.
-database.ref().on("value", function(snapshot) {
 
-    // If any errors are experienced, log them to console.
+  // This callback will be triggered exactly 3 times, unless there are
+  // fewer than 3 searches stored in the Database. It will also get fired
+  // for every new search that gets added to the data set.
+  // limitToLast(3).
+
+ // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value")
+    database.ref().limitToLast(3).on("child_added", function(childSnapshot) {
+
+      console.log(childSnapshot.val().search);
+
+      var recent = $("<h6>"),
+          newDiv = $("<div class='col m4 s4'>");
+
+        newDiv.append(recent);
+
+      recent.text(childSnapshot.val().search);
+
+      $("#searchDisplay").append(newDiv);
+
 }, function(errorObject) {
+  // If any errors are experienced, log them to console.
   console.log("The read failed: " + errorObject.code);
 });
 
+// ON CLICK EVENT WHEN USER SEARCHES FOR A RECIPE
 $("#search-button").on("click", function() {
 
   event.preventDefault();
 
-  var userSearch = $("#user-search").val();
+  // Creates local variable for holding user's search
+  var userSearch = $("#user-search").val().trim();
+
+  // Uploads user search to the database
+  database.ref().push({
+    search: userSearch
+  });
 
   ajaxRequest(userSearch);
 
@@ -49,17 +72,21 @@ function ajaxRequest(userSearch) {
           limitLicense: true
         }, // Additional parameters here
         dataType: 'json',
-        success: function(data) { console.dir((data.source)); },
-        error: function(err) { alert(err); },
+        success: function(data) { 
+
+          alert(JSON.stringify(data));
+
+
+        },
+        error: function(err) { console.log(err); },
         beforeSend: function(xhr) {
-        xhr.setRequestHeader("X-Mashape-Authorization", 'WnxRwgqF8MmshjsrUerbW11n3hPNp1lQY2njsnmA5ZOUeauxan'); // Enter here your Mashape key
+        xhr.setRequestHeader("X-Mashape-Authorization", "hEdGclV7jVmshkmKjchqulNrCcgzp1XKHiCjsnzIfe0SKhnTRf"); // Enter here your Mashape key
       }
     });
        // // After the data comes back from the API
        //  .done(function(response) {
        //  // Storing an array of results in the results variable
        //  var results = response.data;
-        console.log(output);
        //  });
   }
 
