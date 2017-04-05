@@ -11,7 +11,7 @@
 </head>
 <body>
   <nav class="orange lighten-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Logo</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="https://market.mashape.com/spoonacular/recipe-food-nutrition#find-by-ingredients">Link to API</a></li>
       </ul>
@@ -31,6 +31,7 @@
 <main>
     <div class="row">
       <form class="col s9 m9">
+      <!-- FORM TO SEARCH FOR A RECIPE -->
         <div class="input-field">
               <input placeholder="What do you want to cook?" id="user-search" type="text" class="validate">
               <label for="user-search"></label>
@@ -43,6 +44,7 @@
       </button>
   </div>
   </div>
+  <!-- USE FIREBASE TO DISPLAY RECENT SEARCHES -->
   <section id="recent-searches">
     <div class="row">
     <div class="col m12 s12">
@@ -51,16 +53,22 @@
   </div>
 
   <div class="row left-align">
-    <div class="col m4 s4">
-      <h6>red velvet cake</h6>
-    </div>
-    <div class="col m4 s4">
-      <h6>baked ziti</h6>
-    </div>
-    <div class="col m4 s4">
-      <h6>french toast</h6>
-    </div>
+  <div class="col md12 s12" id="searchDisplay">
+
   </div>
+  </div>
+
+    <!-- <div class="col m4 s4">
+      <h6 id="firstSearch">red velvet cake</h6>
+    </div>
+    <div class="col m4 s4">
+      <h6 id="secondSearch">baked ziti</h6>
+    </div>
+    <div class="col m4 s4">
+      <h6 id="thirdSearch">french toast</h6>
+    </div>
+  </div> -->
+
 </section>
 </main>
 </div>
