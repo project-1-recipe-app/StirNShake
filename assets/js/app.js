@@ -57,4 +57,3 @@ $("#search-button").on("click", function() {
   // ajaxRequest(userSearch);
 
   });
-
