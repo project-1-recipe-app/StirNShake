@@ -28,42 +28,40 @@
     <div class="col m6 l6">
       <ul class="collapsible" data-collapsible="accordion">
         <li>
-          <div class="collapsible-header"><i class="material-icons">filter_drama</i>Ingredients</div>
+          <div class="collapsible-header"><i class="material-icons">list</i>Ingredients</div>
           <div class="collapsible-body">
           <!-- TABLE TO LIST OUT INGREDIENTS AND PRICES -->
 
           <table class="highlight">
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Estimated Price ($)</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                  <td>Bananas</td>
-                  <td>3</td>
-                </tr>
-               <tr>
-                  <td>Chocolate chips</td>
-                  <td>4</td>
-                </tr>
-              <tr>
-                  <td>Pancake mix</td>
-                  <td>4</td>
-                </tr>
+            
+            <tbody id="ingredients">
+                
             </tbody>
           </table>
       </div>
       </li>
       <li>
-        <div class="collapsible-header"><i class="material-icons">place</i>Instructions</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header"><i class="material-icons">mode_edit</i>Instructions</div>
+        <div class="collapsible-body"><span id="instructions"></span></div>
       </li>
       <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Grocery List</div>
+        <div class="collapsible-body">
+          <span>
+          <table class="highlight">
+            <tbody id = "groceries">
+              <thead>
+                  <tr>
+                      <th>Item</th>
+                      <th>Estimated Price ($)</th>
+                  </tr>
+              </thead>
+              
+              
+            </tbody>
+          </table>
+          </span>
+        </div>
       </li>
     </ul>
   </div>
@@ -71,10 +69,10 @@
     <div class="col m6 l6">
       <div class="card">
           <div class="card-image">
-            <img src="https://littlecupcakes.com.au/wp-content/uploads/2015/05/Red-Velvet.png" alt="Image Corresponding with Recipe">
+            
           </div>
           <div class="card-content">
-            <p>Description or recipe title here</p>
+            
           </div>
       </div>
     </div>
@@ -102,6 +100,6 @@
   <!-- Compiled and minified JavaScript -->
   <script src="assets/js/materialize.min.js"></script>
   <!-- APPLICATION -->
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app2.js"></script>
 </body>
 </html>
