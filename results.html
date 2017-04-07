@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Recipe Search</title>
+  <title>Search Results</title>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="assets/css/materialize.min.css">
   <!-- FONTS -->
@@ -22,63 +22,29 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-<div id="wrapper">
 <div class="container">
 <header>
-  <h1>Hungry?</h1>
+  <h1>Select a recipe!</h1>
 </header>
 
 <main>
     <div class="row">
-      <form class="col s9 m9">
-      <!-- FORM TO SEARCH FOR A RECIPE -->
-        <div class="input-field">
-              <input placeholder="What do you want to cook?" id="user-search" type="text" class="validate">
-              <label for="user-search"></label>
-      </div>
-    </form>
+      <div class="col s9 m9" id="results-list">
+<!-- SEARCH RESULTS GO HERE -->
 
-    <div class="col s3 m3">
-      <!-- SEARCH BUTTON -->
-      <button class="btn-large waves-effect waves-light orange lighten-3" type="submit" name="action" alt="submit" id="search-button"><i class="material-icons left">search</i>SEARCH
-      </button>
-  </div>
-  </div>
-  <!-- USE FIREBASE TO DISPLAY RECENT SEARCHES -->
-  <section id="recent-searches">
-    <div class="row">
-      <div class="col m12 s12">
-        <h5>Recently searched:</h5>
-      </div>
-    </div>
-
-    <div class="row left-align">
-      <div class="col md12 s12" id="searchDisplay">
 
       </div>
     </div>
-
-    <!-- <div class="col m4 s4">
-      <h6 id="firstSearch">red velvet cake</h6>
-    </div>
-    <div class="col m4 s4">
-      <h6 id="secondSearch">baked ziti</h6>
-    </div>
-    <div class="col m4 s4">
-      <h6 id="thirdSearch">french toast</h6>
-    </div>
-  </div> -->
-</section>
+      
 </main>
-</div>
 </div>
 <!-- FOOTER -->
         <footer class="page-footer">
           <div class="container-fluid">
             <div class="row">
-              <div class="col m12 s12" id="page-footer">
-<!--                 <img src="assets/images/cooking-1.png">
- -->              </div>
+              <div class="col m12 s12">
+              <!-- footer text or images -->
+              </div>
             </div>
           </div>
           <div class="footer-copyright">
