@@ -16,3 +16,29 @@ h6 {
 	text-align: left;
 	margin: none;
 }
+
+.recipe-option-img{
+
+height: 240px;
+max-width:  200px;
+}
+
+.option-card{
+max-width:  200px;
+text-align: center;
+vertical-align: text-top;
+float: left;
+margin-right: 15px;
+
+}
+
+.imgdiv{
+height:  290px;
+overflow: hidden;
+}
+
+.title{
+
+	margin-top: 1.5px;
+	font-size: 14px;
+}

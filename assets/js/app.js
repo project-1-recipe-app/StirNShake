@@ -54,6 +54,9 @@ $("#search-button").on("click", function() {
 
   ajaxRequest(userSearch);
 
+  window.location.replace("results.html?q=" + userSearch);
+
+
   });
 
 
