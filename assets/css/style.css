@@ -2,6 +2,14 @@
 	padding-bottom: 60px;
 }
 
+#index-body{
+	background-image: url("../images/background.png");
+	background-size: 115%;
+	background-repeat: no-repeat;
+	background-position: -60px 60px;
+}
+
+
 header {
 	padding-top: 30px;
 }
