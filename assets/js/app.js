@@ -28,7 +28,7 @@ var database = firebase.database();
       var recent = $("<h6>"),
           newDiv = $("<div class='col m4 s4'>");
 
-        newDiv.append(recent);
+      newDiv.append(recent);
 
       recent.text(childSnapshot.val().search);
 
@@ -47,10 +47,13 @@ $("#search-button").on("click", function() {
   // Creates local variable for holding user's search
   var userSearch = $("#user-search").val().trim();
 
+  $("#searchDisplay").html("");
+
   // Uploads user search to the database
   database.ref().push({
     search: userSearch
   });
+
 
   ajaxRequest(userSearch);
 
@@ -97,3 +100,4 @@ function ajaxRequest(userSearch) {
 
 
 
+  });
