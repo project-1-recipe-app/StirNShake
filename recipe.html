@@ -7,6 +7,8 @@
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- ADDED STYLES -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/sstyle.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -62,8 +64,17 @@
         <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
       </li>
       <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header"><i class="material-icons">whatshot</i>Tunes While You Stir?</div>
+        <div class="collapsible-body">
+        <form id="artist-form">
+        <label for="artist-input">Choose Your Artist</label>
+        <input type="text" id="artist-input">
+        <input id="select-artist" type="submit" class="submit-btn" value="Launch Spotify">
+        </form>
+        <br>
+        <!-- Launch Spotify -->
+        <div id="player-div"></div>
+        </div>
       </li>
     </ul>
   </div>
@@ -103,5 +114,7 @@
   <script src="assets/js/materialize.min.js"></script>
   <!-- APPLICATION -->
   <script src="assets/js/app.js"></script>
+  <!-- Spotify -->
+  <script src= "assets/js/spotify.js"></script>
 </body>
 </html>
