@@ -4,9 +4,10 @@
 
 #index-body{
 	background-image: url("../images/background.png");
-	background-size: 115%;
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: -60px 60px;
+	background-position: center;
+	
 }
 
 
@@ -20,9 +21,8 @@ img {
 }
 
 h6 {
-	font-size: 20px;
+	font-size: 10px;
 	text-align: left;
-	margin: none;
 }
 
 
@@ -42,21 +42,49 @@ margin-right: 15px;
 }
 
 .imgdiv{
-height:  290px;
+height:  300px;
 overflow: hidden;
 }
 
 .title{
 
 	margin-top: 1.5px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
-body {
-/*	background-image: url("../images/cooking-1.png");
-*/
-}
 
 .page-footer {
 	text-align: center;
+	background-color: #ee6e73;
 }
+
+
+::placeholder { /* IE 10+ */
+  color: #A9A9A9;
+}
+
+.groceryItem{
+
+	max-width: 85px;
+	max-height: 100px;
+}
+
+
+#recipeImg{
+	border-top-color: #CCC;
+	border-width: 5px;
+}
+
+
+.recent{
+
+	font-size: 18px;
+	color: black;
+}
+
+.recent:hover {
+       text-decoration: underline;
+}
+
+
+
