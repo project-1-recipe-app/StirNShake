@@ -3,7 +3,7 @@
 <head>
   <title>Recipe Search</title>
   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="assets/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/materialize.css">
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- ADDED STYLES -->
@@ -13,7 +13,7 @@
 </head>
 <body>
   <nav class="orange lighten-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Stir</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="https://market.mashape.com/spoonacular/recipe-food-nutrition#find-by-ingredients">Link to API</a></li>
       </ul>
@@ -28,11 +28,11 @@
 <div class="container">
   <div class="row">
     <div class="col m6 l6">
-      <ul class="collapsible" data-collapsible="accordion">
+      <ul class="collapsible popout" data-collapsible="accordion">
         <li>
-          <div class="collapsible-header"><i class="material-icons">list</i>Ingredients</div>
+          <div class="collapsible-header active"><i class="material-icons">list</i>Ingredients</div>
           <div class="collapsible-body">
-          <!-- TABLE TO LIST OUT INGREDIENTS AND PRICES -->
+          <!-- TABLE TO LIST OUT INGREDIENTS -->
 
           <table class="highlight">
             
@@ -55,7 +55,7 @@
               <thead>
                   <tr>
                       <th>Item</th>
-                      <th>Estimated Price ($)</th>
+                      <th></th>
                   </tr>
               </thead>
               
@@ -77,17 +77,31 @@
 
         </div>
       </li>
+      <li>
+<!-- HEAD -->
+        <div class="collapsible-header"><i class="material-icons">whatshot</i>Tunes While You Stir?</div>
+        <div class="collapsible-body">
+        <form id="artist-form">
+        <label for="artist-input">Choose Your Artist</label>
+        <input type="text" id="artist-input">
+        <input id="select-artist" type="submit" class="submit-btn" value="Launch Spotify">
+        </form>
+        <br>
+        <!-- Launch Spotify -->
+        <div id="player-div"></div>
+      </li>
     </ul>
   </div>
 
     <div class="col m6 l6">
       <div class="card">
+           <div class="card-content">
+            
+          </div>
           <div class="card-image" id="chosenRecipe">
             
           </div>
-          <div class="card-content">
-            
-          </div>
+          
       </div>
     </div>
   </div>
