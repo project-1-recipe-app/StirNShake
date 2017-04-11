@@ -2,6 +2,14 @@
 	padding-bottom: 60px;
 }
 
+#index-body{
+	background-image: url("../images/background.png");
+	background-size: 115%;
+	background-repeat: no-repeat;
+	background-position: -60px 60px;
+}
+
+
 header {
 	padding-top: 30px;
 }
@@ -15,4 +23,40 @@ h6 {
 	font-size: 20px;
 	text-align: left;
 	margin: none;
+}
+
+
+.recipe-option-img{
+
+height: 240px;
+max-width:  200px;
+}
+
+.option-card{
+max-width:  200px;
+text-align: center;
+vertical-align: text-top;
+float: left;
+margin-right: 15px;
+
+}
+
+.imgdiv{
+height:  290px;
+overflow: hidden;
+}
+
+.title{
+
+	margin-top: 1.5px;
+	font-size: 14px;
+}
+
+body {
+/*	background-image: url("../images/cooking-1.png");
+*/
+}
+
+.page-footer {
+	text-align: center;
 }
