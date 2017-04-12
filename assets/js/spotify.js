@@ -1,3 +1,12 @@
+  //query string (grabs variable from url that was passed from another file)
+//pull queryString, convert to array, and assign to variable
+var pulledId = location.search.split("");
+console.log(pulledId.length);
+
+//convert array back to string after getting rid of unneeded characters 
+recipeId = pulledId.splice(10,10).join("");
+
+
   function getArtistTrack(artist) {
 
     // Running an initial search to identify the artist's unique Spotify id
@@ -32,7 +41,7 @@
           "' frameborder='0' allowtransparency='true'></iframe>";
 
         // Appending the new player into the HTML
-        $("#player-div").append(player);
+        $("#player-div").html(player);
       });
     });
   }
