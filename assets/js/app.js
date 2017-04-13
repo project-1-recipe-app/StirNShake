@@ -25,14 +25,17 @@ var database = firebase.database();
 
       console.log(childSnapshot.val().search);
 
-      var recent = $("<h6>"),
-          newDiv = $("<div class='col m4 s4'>");
+     
+      newDiv = $("<div class='col m4 s4'>");
 
-      newDiv.append(recent);
+      
+      var recent = childSnapshot.val().search;
+      var link = "<a class = 'recent' href='results.html?q=" + recent + "'>" + recent + "</a>";
+      console.log(link);
+      newDiv.prepend(link);
+      
 
-      recent.text(childSnapshot.val().search);
-
-      $("#searchDisplay").append(newDiv);
+      $("#searchDisplay").prepend(newDiv);
 
 }, function(errorObject) {
   // If any errors are experienced, log them to console.
@@ -55,15 +58,10 @@ $("#search-button").on("click", function() {
   });
 
 
-  ajaxRequest(userSearch);
 
   window.location.replace("results.html?q=" + userSearch);
 
-
-<<<<<<< HEAD
-=======
   });
-
 
 function ajaxRequest(userSearch) {
       // Constructing a URL to search Spoonacular for requested recipe
@@ -97,10 +95,3 @@ function ajaxRequest(userSearch) {
        //  var results = response.data;
        //  });
   }
-
- 
-
-
-
->>>>>>> 7e2a51afd206c0dd35e5d3f333615c2376d21f7d
-  });
