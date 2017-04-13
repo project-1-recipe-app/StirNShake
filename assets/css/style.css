@@ -7,9 +7,13 @@
 	background-size: 135%;
 	background-repeat: no-repeat;
 	background-position: center;
-	
 
 	
+	
+}
+
+html{
+	height: auto;
 }
 
 
@@ -58,7 +62,10 @@ overflow: hidden;
 .page-footer {
 	text-align: center;
 	background-color: #ee6e73;
+	
 }
+
+
 
 
 ::placeholder { /* IE 10+ */
