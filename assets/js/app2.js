@@ -1,6 +1,5 @@
 
 
-
 searchByQuery();
 function searchByQuery(){
 
@@ -45,19 +44,6 @@ function searchByQuery(){
 
   })
 }
-
-
-
-
-
-
-
- 
-
-
-
-
-
 
 
 
