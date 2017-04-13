@@ -33,7 +33,9 @@ function searchByQuery(){
        var title = response.results[i].title
        var recipeId = response.results[i].id;
        console.log(recipeId);
-       var imgResult = "<div class='card option-card'><div class='card-image imgdiv'><a href='recipe.html?recipeId=" + recipeId + "'><img class='recipe-option-img' id='recipe-option-img" + [i] + "' src='" + baseURL + imgUrl + "'><p class=title>" + title + "</p></div>";
+       var imgResult = "<div class='card option-card'><div class='card-image imgdiv'><a href='recipe.html?recipeId=" 
+       + recipeId + "'><img class='recipe-option-img' id='recipe-option-img" + [i] + "' src='" + baseURL + imgUrl + 
+       "'></div><p class=title>" + title + "</p></div>";
 
       
       $("#results-list").append(imgResult);
