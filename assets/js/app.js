@@ -61,7 +61,37 @@ $("#search-button").on("click", function() {
 
   window.location.replace("results.html?q=" + userSearch);
 
-
   });
 
+function ajaxRequest(userSearch) {
+      // Constructing a URL to search Spoonacular for requested recipe
+      var queryURL = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search";
 
+      // Performing our AJAX GET request
+      var output = $.ajax({
+        url: queryURL, // The URL to the API. You can get this in the API page of the API you intend to consume
+        type: 'GET', // The HTTP Method
+        data: {
+          query: userSearch,
+          number: 1,
+          instructionsRequired: true,
+          limitLicense: true
+        }, // Additional parameters here
+        dataType: 'json',
+        success: function(data) { 
+
+          alert(JSON.stringify(data));
+
+
+        },
+        error: function(err) { console.log(err); },
+        beforeSend: function(xhr) {
+        xhr.setRequestHeader("X-Mashape-Authorization", "hEdGclV7jVmshkmKjchqulNrCcgzp1XKHiCjsnzIfe0SKhnTRf"); // Enter here your Mashape key
+      }
+    });
+       // // After the data comes back from the API
+       //  .done(function(response) {
+       //  // Storing an array of results in the results variable
+       //  var results = response.data;
+       //  });
+  }
