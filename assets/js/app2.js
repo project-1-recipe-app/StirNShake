@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // //random recipe
 //  $.ajax({
 //   url: "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/random?limitLicense=false&number=1&tags=vegetarian%2Cdessert",
@@ -26,11 +27,35 @@ var ingredientItm = "";
     'X-Mashape-Key': 'hEdGclV7jVmshkmKjchqulNrCcgzp1XKHiCjsnzIfe0SKhnTRf',
  	'Accept': 'application/json'   
  	}
+=======
+
+
+
+searchByQuery();
+function searchByQuery(){
+
+  var pulledSrch = location.search.split("");
+  console.log(pulledSrch.splice(0,3).join(""));
+  var searchRecipe = pulledSrch.join("");
+// // //Seacrh by Query
+  var ingredientItm = "";
+  console.log(searchRecipe)
+  var queryURL1 = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?query=" + searchRecipe + "&instructionsRequired=true&extendedIngredients=true&instructions=true";
+//search recipes
+ $.ajax({
+  url: queryURL1,
+  method: "GET",
+  headers: {
+  'X-Mashape-Key': '2wfnmNyju2mshMtxvhjQLtmgC549p1UkpmNjsnc7dKbPWPNsgM',
+  'Accept': 'application/json'   
+  }
+>>>>>>> 7e2a51afd206c0dd35e5d3f333615c2376d21f7d
 
 })
 
   .done(function(response) {
 
+<<<<<<< HEAD
   	//display image and title
   	var imguRL = response[0].image;
   	var title = response[0].title;
@@ -64,4 +89,43 @@ var ingredientItm = "";
   }
 }
   );
+=======
+    var resultList = response.results;
+    var baseURL = response.baseUri;
+  
+    
+
+    for (var i=0; i<resultList.length; i++){
+       var imgUrl = response.results[i].image;
+       var title = response.results[i].title
+       var recipeId = response.results[i].id;
+       console.log(recipeId);
+       var imgResult = "<div class='card option-card'><div class='card-image imgdiv'><a href='recipe.html?recipeId=" + recipeId + "'><img class='recipe-option-img' id='recipe-option-img" + [i] + "' src='" + baseURL + imgUrl + "'><p class=title>" + title + "</p></div>";
+
+      
+      $("#results-list").append(imgResult);
+    }
+      
+
+      
+
+  })
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+>>>>>>> 7e2a51afd206c0dd35e5d3f333615c2376d21f7d
 
