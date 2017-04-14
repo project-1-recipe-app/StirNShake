@@ -7,12 +7,21 @@
 	background-size: 135%;
 	background-repeat: no-repeat;
 	background-position: center;
-
-	
-	
 }
 
-html{
+
+
+/*.button {
+	background-color: #FFB74D;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+	border-radius: 10px;
+	border:  #FFB74D;
+	padding: 10px 20px;
+}
+
+html{*/
 	height: auto;
 }
 
@@ -51,7 +60,7 @@ body {
 	background-color: #ff8a80;
 	color: white;
 }	
->>>>>>> ab47265424b1cde18f25600e4a492109dc46b39a
+
 img {
 	width: 200px;
 	height: auto;
