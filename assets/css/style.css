@@ -2,17 +2,19 @@
 	padding-bottom: 60px;
 }
 
+
 #index-body{
 	background-image: url("../images/background.png");
 	background-size: 135%;
 	background-repeat: no-repeat;
 	background-position: center;
-
-	
-	
 }
 
-html{
+
+
+
+
+html{*/
 	height: auto;
 }
 
@@ -20,6 +22,7 @@ html{
 header {
 	padding-top: 30px;
 }
+
 
 /* CSS FOR FULL PAGE BACKGROUND (EVEN WHEN WINDOW SIZE CHANGES) */
 #index-body{ 
@@ -51,7 +54,8 @@ body {
 	background-color: #ff8a80;
 	color: white;
 }	
->>>>>>> ab47265424b1cde18f25600e4a492109dc46b39a
+
+
 img {
 	width: 200px;
 	height: auto;
@@ -62,18 +66,21 @@ h6 {
 	text-align: left;
 }
 .recipe-option-img{
-	height: 240px;
-	max-width:  200px;
+	height: auto;
+	width:  200px;
 }
-	.option-card{
-	max-width:  200px;
+.option-card{
 	text-align: center;
 	vertical-align: text-top;
 	float: left;
 	margin-right: 15px;
+	width: 200px;
+	height: 250px;
 }
+/* wrapper around results images to make sure image sizes look the same */
 .imgdiv{
-	height:  300px;
+	width:  200px;
+	height: 200px;
 	overflow: hidden;
 }
 .title{
@@ -85,7 +92,6 @@ h6 {
 	background-color: #ee6e73;
 	
 }
-
 ::placeholder { /* IE 10+ */
   color: #A9A9A9;
 }
