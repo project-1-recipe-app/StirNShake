@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Recipe Search</title>
   <!-- Compiled and minified CSS -->
@@ -11,64 +12,66 @@
 
   <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 </head>
+
 <body id="index-body">
   <nav class="orange lighten-2" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Stir & Shake</a>
     </div>
   </nav>
 
-<div class="container">
-<header>
-  <h1>Hungry?</h1>
-</header>
+  <div class="container">
+    <header>
+      <h1>Hungry?</h1>
+    </header>
 
     <div class="row">
       <form class="col s9 m9">
-      <!-- FORM TO SEARCH FOR A RECIPE -->
+        <!-- FORM TO SEARCH FOR A RECIPE -->
         <div class="input-field">
-              <input placeholder="What do you want to cook?" id="user-search" type="text" class="validate">
-              <label for="user-search"></label>
-      </div>
-    </form>
+          <input placeholder="What do you want to cook?" id="user-search" type="text" class="validate">
+          <label for="user-search"></label>
+        </div>
+      </form>
 
-    <div class="col s3 m3">
-      <!-- SEARCH BUTTON -->
-      <button class="btn-large waves-effect waves-light orange lighten-3" type="submit" name="action" alt="submit" id="search-button"><i class="material-icons left">search</i>SEARCH
+      <div class="col s3 m3">
+        <!-- SEARCH BUTTON -->
+        <button class="btn-large waves-effect waves-light orange lighten-3" type="submit" name="action" alt="submit" id="search-button"><i class="material-icons left">search</i>SEARCH
       </button>
-  </div>
-  </div>
-  <!-- USE FIREBASE TO DISPLAY RECENT SEARCHES -->
-  <section id="recent-searches">
-    <div class="row">
-      <div class="col m12 s12">
-        <h5>Recently searched:</h5>
       </div>
     </div>
-
-    <div class="row left-align">
-      <div class="col md12 s12" id="searchDisplay">
-
+    <!-- USE FIREBASE TO DISPLAY RECENT SEARCHES -->
+    <section id="recent-searches">
+      <div class="row">
+        <div class="col m12 s12">
+          <h5>Recently searched:</h5>
+        </div>
       </div>
-    </div>
-</section>
-</div>
+
+      <div class="row left-align">
+        <div class="col md12 s12" id="searchDisplay">
+
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- Sticky Footer -->
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted">Copyright &copy; 2017 - Brittni Wright</span>
-         </div>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Copyright &copy; 2017 - Brittni Wright &bull; India Evans &bull; Henrietta Sharpe</span>
+    </div>
+  </footer>
 
 
 
   <!-- FIREBASE -->
   <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
-   <!-- JQUERY -->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- JQUERY -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="assets/js/materialize.min.js"></script>
   <!-- APPLICATION -->
   <script src="assets/js/app.js"></script>
 </body>
+
 </html>

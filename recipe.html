@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Recipe Search</title>
   <!-- Compiled and minified CSS -->
@@ -11,37 +12,38 @@
   <link rel="stylesheet" type="text/css" href="assets/css/sstyle.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
   <nav class="orange lighten-2" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Stir & Shake</a>
     </div>
   </nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col m6 l6">
-      <ul class="collapsible popout" data-collapsible="accordion">
-        <li>
-          <div class="collapsible-header active"><i class="material-icons">list</i>Ingredients</div>
-          <div class="collapsible-body">
-          <!-- TABLE TO LIST OUT INGREDIENTS -->
+  <div class="container">
+    <div class="row">
+      <div class="col m6 l6">
+        <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header active"><i class="material-icons">list</i>Ingredients</div>
+            <div class="collapsible-body">
+              <!-- TABLE TO LIST OUT INGREDIENTS -->
 
-          <table class="highlight">
-            
-            <tbody id="ingredients">
-                
-            </tbody>
-          </table>
-      </div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">mode_edit</i>Instructions</div>
-        <div class="collapsible-body"><span id="instructions"></span></div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Grocery List</div>
-        <div class="collapsible-body">
-          <span>
+              <table class="highlight">
+
+                <tbody id="ingredients">
+
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">mode_edit</i>Instructions</div>
+            <div class="collapsible-body"><span id="instructions"></span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Grocery List</div>
+            <div class="collapsible-body">
+              <span>
           <table class="highlight">
             <tbody id = "groceries">
               <thead>
@@ -55,52 +57,54 @@
             </tbody>
           </table>
           </span>
-      </li>
-      <li>
-<!-- HEAD -->
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Tunes While You Stir?</div>
-        <div class="collapsible-body">
-        <form id="artist-form">
-        <iframe src="https://open.spotify.com/embed/user/12127765650/playlist/1wVlsya6O8ti59oVA6Qi8m" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-        </form>
-        <br>
-        <!-- Launch Spotify -->
-        <div id="player-div"></div>
-      </li>
-    </ul>
-  </div>
+          </li>
+          <li>
+            <!-- HEAD -->
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Tunes While You Stir?</div>
+            <div class="collapsible-body">
+              <form id="artist-form">
+                <iframe src="https://open.spotify.com/embed/user/12127765650/playlist/1wVlsya6O8ti59oVA6Qi8m" width="300" height="380" frameborder="0"
+                  allowtransparency="true"></iframe>
+              </form>
+              <br>
+              <!-- Launch Spotify -->
+              <div id="player-div"></div>
+          </li>
+        </ul>
+        </div>
 
-    <div class="col m6 l6">
-      <div class="card">
-           <div class="card-content">
-            
+        <div class="col m6 l6">
+          <div class="card">
+            <div class="card-content">
+
+            </div>
+            <div class="card-image" id="chosenRecipe">
+
+            </div>
+
           </div>
-          <div class="card-image" id="chosenRecipe">
-            
-          </div>
-          
+        </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-  <!-- Sticky Footer -->
-    <footer class="footer">
+      <!-- Sticky Footer -->
+      <footer class="footer">
         <div class="container">
-            <span class="text-muted">Copyright &copy; 2017 - UNC Coding Bootcamp</span>
-         </div>
-    </footer>
+          <span class="text-muted">Copyright &copy; 2017 - Brittni Wright &bull; India Evans &bull; Henrietta Sharpe</span>
+        </div>
+      </footer>
 
-   <!-- JQUERY -->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="assets/js/materialize.min.js"></script>
-  <!-- APPLICATION -->
+      <!-- JQUERY -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="assets/js/materialize.min.js"></script>
+      <!-- APPLICATION -->
 
-  <script src="assets/js/app.js"></script>
-  <!-- Spotify -->
-  <script src= "assets/js/spotify.js"></script>
+      <script src="assets/js/app.js"></script>
+      <!-- Spotify -->
+      <script src="assets/js/spotify.js"></script>
 
-  <script src="assets/js/recipe.js"></script>
+      <script src="assets/js/recipe.js"></script>
 </body>
+
 </html>
