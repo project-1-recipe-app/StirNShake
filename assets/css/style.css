@@ -1,6 +1,29 @@
 #recent-searches {
 	padding-bottom: 60px;
 }
+
+
+#index-body{
+	background-image: url("../images/background.png");
+	background-size: 135%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+
+
+html{*/
+	height: auto;
+}
+
+
+header {
+	padding-top: 30px;
+}
+
+
 /* CSS FOR FULL PAGE BACKGROUND (EVEN WHEN WINDOW SIZE CHANGES) */
 #index-body{ 
 	background: url("../images/background.png") no-repeat center center fixed; 
@@ -31,6 +54,13 @@ body {
 	background-color: #ff8a80;
 	color: white;
 }	
+
+
+img {
+	width: 200px;
+	height: auto;
+}
+
 h6 {
 	font-size: 25px;
 	text-align: left;
