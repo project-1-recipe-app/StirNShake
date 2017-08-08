@@ -26,8 +26,6 @@ function searchByQuery(){
     var resultList = response.results;
     var baseURL = response.baseUri;
   
-    
-
     for (var i=0; i<resultList.length; i++){
        var imgUrl = response.results[i].image;
        var title = response.results[i].title
